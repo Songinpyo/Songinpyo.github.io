@@ -36,16 +36,16 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Jangwon Lee   
-  <span style="color:MediumBlue">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
+  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
+  <span style="color:#003092">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  <span style="color:MediumBlue">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
+  <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
+  <span style="color:#003092">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
-  <span style="color:MediumBlue">**WACV 2025**</span> | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
+  <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
+  <span style="color:#003092">**WACV 2025**</span> | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
 
 - #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
@@ -61,8 +61,8 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 
 - #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
-  <span style="color:#003092">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794) | <span class='show_paper_citations' data='ywaDtloAAAAJ:u-x6o8ySG0sC'></span>
-
+  <span style="color:#003092">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794)
+  
 <!-- <div class='paper-box-text' markdown="1">
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
