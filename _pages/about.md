@@ -17,9 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello! I'm Inpyo Song, a master's student researching computer vision and artificial intelligence.
+Hello! I'm Inpyo Song, a master's student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
 My goal is to develop AI that truly works in the real world. Rather than models that only perform well in controlled laboratory settings, I'm focused on creating robust vision systems that can operate reliably in complex, unpredictable real-world environments.
 Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving. My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
+Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
+
+<!-- <h3 id="research-interests">Research Interests</h3>
+- Traffic Accident Anticipation -->
+
+
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
