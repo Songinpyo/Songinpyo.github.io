@@ -52,7 +52,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
-  WACV&#39;25 | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
+  WACV&#39;25 | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945) | [[code]](https://github.com/Songinpyo/VIEW360)
 
 - #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
