@@ -48,23 +48,20 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
   <span style="color:MediumBlue">**WACV 2025**</span> | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
 
 - #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Jangwon Lee   
+  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
   <span style="color:#8B0000">**(Long Oral)** </span><span style="color:MediumBlue">**IROS 2024**</span> | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
 
 - #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
-  <span style="color:MediumBlue">**CVIU 2024**</span> | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
+  <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
+  <span style="color:#003092">**CVIU 2024**</span> | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
 
 - #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
-  <span style="color:MediumBlue">**IJCAI 2024**</span> | [[paper]](https://www.ijcai.org/proceedings/2024/138)
+  <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
+  <span style="color:#003092">**IJCAI 2024**</span> | [[paper]](https://www.ijcai.org/proceedings/2024/138)
 
 - #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
-  <span style="color:MediumBlue">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
-  <span style="color:MediumBlue">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794) | <span style="display: inline-flex; align-items: center; font-size: 0.9em;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_Scholar_logo.png" alt="Google Scholar" width="16" style="margin-right: 4px;">
-  <strong><span class="show_paper_citations" data="ywaDtloAAAAJ:u-x6o8ySG0sC">Citations</span></strong>
-</span>
+  <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
+  <span style="color:#003092">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794) | <span class='show_paper_citations' data='ywaDtloAAAAJ:u-x6o8ySG0sC'></span>
 
 <!-- <div class='paper-box-text' markdown="1">
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
