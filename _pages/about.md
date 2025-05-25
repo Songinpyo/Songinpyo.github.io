@@ -19,7 +19,8 @@ redirect_from:
 
 Hello! I'm Inpyo Song, a master's student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
 My goal is to develop AI that truly works in the real world. Rather than models that only perform well in controlled laboratory settings, I'm focused on creating vision systems that can operate reliably in complex, unpredictable real-world environments.
-Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving. My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
+Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving.
+My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
 Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
 <!-- <h3 id="research-interests">Research Interests</h3>
@@ -90,3 +91,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 # 💻 Internships
 - *Jun. 2024 - Aug. 2024*, Research Intern @ [Indiana University Bloomington CVLab](http://vision.soic.indiana.edu), Bloomington, IN, USA
+
+# 🤝 Services
+- Emergency Reviewer, ICDL 2024
+- Emergency Reviewer, WACV 2025
