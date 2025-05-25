@@ -17,42 +17,73 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hello! I'm Inpyo Song, a master's student researching computer vision and artificial intelligence.
+My goal is to develop AI that truly works in the real world. Rather than models that only perform well in controlled laboratory settings, I'm focused on creating robust vision systems that can operate reliably in complex, unpredictable real-world environments.
+Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving. My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *May. 2025*: &nbsp;🎉🎉 Two Papers Accepted at ICIP 2025.
+- *Dec. 2024*: &nbsp;🎉🎉 One Paper Accepted at WACV 2025.
+- *Oct. 2024*: &nbsp;🎉🎉 "SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects" presented as Long Oral Presentation at IROS 2024.
+- *Jun. 2024*: &nbsp;🎉🎉 One Paper Accepted at IROS 2024.
+- *Oct. 2024*: &nbsp;🎉🎉 Got Exellence Award at SKKU graduate student start-up competition.
+- *Sep. 2024*: &nbsp;🎉🎉 One Paper Accepted at CVIU journal (IF: 4.1).
+- *Aug. 2024*: &nbsp;🎉🎉 Got President's Award from IITP in 2024 Digital Innovation Talent Symposium.
 
-# 📝 Publications 
+# 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+- #### Real-Time Traffic Accident Anticipation with Feature Reuse
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Jangwon Lee   
+  <span style="color:MediumBlue">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
 
+- #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
+  <span style="color:MediumBlue">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
+
+- #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
+  <span style="color:MediumBlue">**WACV 2025**</span> | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
+
+- #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Jangwon Lee   
+  <span style="color:#8B0000">**(Long Oral)** </span><span style="color:MediumBlue">**IROS 2024**</span> | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
+
+- #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
+  <span style="color:MediumBlue">**CVIU 2024**</span> | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
+
+- #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
+  <span style="color:MediumBlue">**IJCAI 2024**</span> | [[paper]](https://www.ijcai.org/proceedings/2024/138)
+
+- #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
+  <span style="color:MediumBlue">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
+  <span style="color:MediumBlue">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794) | <span style="display: inline-flex; align-items: center; font-size: 0.9em;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_Scholar_logo.png" alt="Google Scholar" width="16" style="margin-right: 4px;">
+  <strong><span class="show_paper_citations" data="ywaDtloAAAAJ:u-x6o8ySG0sC">Citations</span></strong>
+</span>
+
+<!-- <div class='paper-box-text' markdown="1">
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
 **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='ywaDtloAAAAJ:u-x6o8ySG0sC'></span></strong>
+</div> -->
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *Oct. 2024* Excellence Award, SKKU Graduate Student Startup Competition (Multimodal VQA-Based Tutoring System for the Digital Transformation of Hands-On Education)
+- *Aug. 2024* President's Award from IITP, 2024 Digital Innovation Talent Symposium (Motion-Aware Heatmap Regression for Human Pose Estimation in Videos)
+- *Feb. 2024* Encouragement Award, SKKU Research Matters (Technological Social Responsibility: Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera)
+- *Dec. 2022* Grand Award from SKKU, KAU Start-up Idea Competition (Generating Digital Twin using Instance-NeRF)
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+<!-- # 📖 Educations
+- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+
+<!-- # 💬 Invited Talks
+- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *Jun. 2024 - Aug. 2024*, Research Intern @ [Indiana University Bloomington CVLab](http://vision.soic.indiana.edu), Bloomington, IN, USA
