@@ -25,43 +25,43 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 
 
 # 🔥 News
-- *May. 2025*: &nbsp;🎉🎉 Two Papers Accepted at ICIP 2025.
-- *Dec. 2024*: &nbsp;🎉🎉 One Paper Accepted at WACV 2025.
-- *Oct. 2024*: &nbsp;🎉🎉 "SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects" presented as Long Oral Presentation at IROS 2024.
-- *Jun. 2024*: &nbsp;🎉🎉 One Paper Accepted at IROS 2024.
-- *Oct. 2024*: &nbsp;🎉🎉 Got Exellence Award at SKKU graduate student start-up competition.
-- *Sep. 2024*: &nbsp;🎉🎉 One Paper Accepted at CVIU journal (IF: 4.1).
-- *Aug. 2024*: &nbsp;🎉🎉 Got President's Award from IITP in 2024 Digital Innovation Talent Symposium.
+- *May 2025*: 🎉🎉 Two papers accepted at ICIP 2025.
+- *Dec. 2024*: 🎉🎉 One paper accepted at WACV 2025.
+- *Oct. 2024*: 🎉🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
+- *Oct. 2024*: 🏆🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
+- *Sep. 2024*: 🎉🎉 One paper accepted at CVIU journal (IF: 4.1).
+- *Aug. 2024*: 🏆🏆 Received President's Award from IITP at 2024 Digital Innovation Talent Symposium.
+- *Jun. 2024*: 🎉🎉 One paper accepted at IROS 2024.
 
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  <span style="color:#003092">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
+  ICIP'25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
   <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  <span style="color:#003092">**ICIP 2025**</span> [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
+  ICIP'25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
-  <span style="color:#003092">**WACV 2025**</span> | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
+  WACV'25 | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945)
 
 - #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  <span style="color:#8B0000">**(Long Oral)** </span><span style="color:MediumBlue">**IROS 2024**</span> | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
+  <span style="color:#8B0000">**(Long Oral)** </span>IROS'24 | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
 
 - #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
-  <span style="color:#003092">**CVIU 2024**</span> | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
+  CVIU'24 (IF: 4.1) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
 
 - #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
-  <span style="color:#003092">**IJCAI 2024**</span> | [[paper]](https://www.ijcai.org/proceedings/2024/138)
+  IJCAI'24 | [[paper]](https://www.ijcai.org/proceedings/2024/138)
 
 - #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
-  <span style="color:#003092">**CVPRW 2024**</span> | [[arXiv]](https://arxiv.org/abs/2405.19794)
+  CVPRW'24 | [[arXiv]](https://arxiv.org/abs/2405.19794)
   
 <!-- <div class='paper-box-text' markdown="1">
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
