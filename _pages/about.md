@@ -25,13 +25,13 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 
 
 # 🔥 News
-- *May 2025*: 🎉🎉 Two papers accepted at ICIP 2025.
-- *Dec. 2024*: 🎉🎉 One paper accepted at WACV 2025.
-- *Oct. 2024*: 🎉🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
-- *Oct. 2024*: 🏆🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
-- *Sep. 2024*: 🎉🎉 One paper accepted at CVIU journal (IF: 4.1).
-- *Aug. 2024*: 🏆🏆 Received President's Award from IITP at 2024 Digital Innovation Talent Symposium.
-- *Jun. 2024*: 🎉🎉 One paper accepted at IROS 2024.
+- *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
+- *Dec. 2024*: 🎉 One paper accepted at WACV 2025.
+- *Oct. 2024*: 🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
+- *Oct. 2024*: 🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
+- *Sep. 2024*: 🎉 One paper accepted at CVIU journal (IF: 4.1).
+- *Aug. 2024*: 🏆 Received President's Award from IITP at 2024 Digital Innovation Talent Symposium.
+- *Jun. 2024*: 🎉 One paper accepted at IROS 2024.
 
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 
