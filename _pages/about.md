@@ -77,6 +77,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 </div> -->
 
 # 🎖 Honors and Awards
+- *Feb. 2025* Selected for I-Corps Korea Program, (VLM-based Arduino Tutor)
 - *Oct. 2024* Excellence Award, SKKU Graduate Student Startup Competition (Multimodal VQA-Based Tutoring System for the Digital Transformation of Hands-On Education)
 - *Aug. 2024* President's Award from IITP, 2024 Digital Innovation Talent Symposium (Motion-Aware Heatmap Regression for Human Pose Estimation in Videos)
 - *Feb. 2024* Encouragement Award, SKKU Research Matters (Technological Social Responsibility: Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera)
