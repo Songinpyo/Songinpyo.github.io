@@ -55,9 +55,9 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
   WACV&#39;25 | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945) | [[code]](https://github.com/Songinpyo/VIEW360)
 
-- #### SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
+- #### <span style="color:#F7374F">**(Long Oral)** </span> SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  <span style="color:#8B0000">**(Long Oral)** </span>IROS&#39;24 | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
+  IROS&#39;24 | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
 
 - #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
