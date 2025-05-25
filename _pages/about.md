@@ -33,6 +33,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 # 🔥 News
 - *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
+- *Feb. 2025*: 🏆 Selected for I-Corps Korea Program
 - *Dec. 2024*: 🎉 One paper accepted at WACV 2025.
 - *Oct. 2024*: 🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
 - *Oct. 2024*: 🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
