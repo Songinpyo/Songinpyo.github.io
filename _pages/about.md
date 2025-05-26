@@ -45,11 +45,11 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]]
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17449)
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
   <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]]
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17445)
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
