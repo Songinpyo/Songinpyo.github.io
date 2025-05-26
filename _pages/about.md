@@ -61,7 +61,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 - #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
-  CVIU&#39;24 (IF: 4.1) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
+  CVIU&#39;24 (IF: 4.3) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
 
 - #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
