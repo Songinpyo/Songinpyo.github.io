@@ -23,6 +23,8 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
 Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
+You can find my [CV](https://songinpyo.github.io/assets/Curriculum_Vitae.pdf) here. I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
+
 <!-- <h3 id="research-interests">Research Interests</h3>
 - Traffic Accident Anticipation -->
 
@@ -39,6 +41,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 - *Oct. 2024*: 🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
 - *Sep. 2024*: 🎉 One paper accepted at CVIU.
 - *Aug. 2024*: 🏆 Received President's Award from IITP at 2024 Digital Innovation Talent Symposium.
+- *Jun. 2024*: Thrilled to join the Indiana University Bloomington CVLab as an intern!
 - *Jun. 2024*: 🎉 One paper accepted at IROS 2024.
 
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
@@ -49,7 +52,7 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
   <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17445)
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17445)) | [[code]](https://github.com/Songinpyo/PawPrint-ICIP2025)
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
@@ -63,9 +66,9 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
   <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
   CVIU&#39;24 (IF: 4.3) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
 
-- #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
+- #### <span style="color:#F7374F">**(Long Oral)** </span> Motion-aware Heatmap Regression for Human Pose Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
-  IJCAI&#39;24 | [[paper]](https://www.ijcai.org/proceedings/2024/138)
+  IJCAI&#39;24 (14.0 % acceptance rate) | [[paper]](https://www.ijcai.org/proceedings/2024/138)
 
 - #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
