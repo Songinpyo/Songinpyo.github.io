@@ -66,7 +66,7 @@ You can find my [CV](https://songinpyo.github.io/assets/Curriculum_Vitae.pdf) he
   <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
   CVIU&#39;24 (IF: 4.3) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
 
-- #### <span style="color:#F7374F">**(Long Oral)** </span> Motion-aware Heatmap Regression for Human Pose Estimation in Videos
+- #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
   IJCAI&#39;24 (14.0 % acceptance rate) | [[paper]](https://www.ijcai.org/proceedings/2024/138)
 
