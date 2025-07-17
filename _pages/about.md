@@ -25,6 +25,8 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 
 You can find my [CV](https://songinpyo.github.io/assets/Curriculum_Vitae.pdf) here. I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
 
+<span style="color:#F7374F">**Actively looking for a PhD positions starting from 2026 Fall.**</span>
+
 <!-- <h3 id="research-interests">Research Interests</h3>
 - Traffic Accident Anticipation -->
 
@@ -48,7 +50,7 @@ You can find my [CV](https://songinpyo.github.io/assets/Curriculum_Vitae.pdf) he
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17449)
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17449) | [[code]](https://github.com/Songinpyo/RARE-ICIP2025)
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
   <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
