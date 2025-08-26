@@ -36,6 +36,7 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 
 
 # 🔥 News
+- *Aug. 2025*: 🏆 Received the Best Graduate Research Award at the 2025 Digital Innovation Talent Symposium hosted by the Ministry of Science and ICT.
 - *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
 - *Feb. 2025*: 🏆 Selected for I-Corps Korea Program
 - *Dec. 2024*: 🎉 One paper accepted at WACV 2025.
@@ -83,6 +84,7 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 </div> -->
 
 # 🎖 Honors and Awards
+- *Aug. 2025* Best Graduate Research Award, 2025 Digital Innovation Talent Symposium, Ministry of Science and ICT (Real-Time Traffic Accident Anticipation with Feature Reuse)
 - *Feb. 2025* Selected for I-Corps Korea Program, (VLM-based Arduino Tutor)
 - *Oct. 2024* Excellence Award, SKKU Graduate Student Startup Competition (Multimodal VQA-Based Tutoring System for the Digital Transformation of Hands-On Education)
 - *Aug. 2024* President's Award from IITP, 2024 Digital Innovation Talent Symposium (Motion-Aware Heatmap Regression for Human Pose Estimation in Videos)
