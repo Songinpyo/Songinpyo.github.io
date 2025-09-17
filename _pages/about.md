@@ -51,11 +51,11 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17449) | [[code]](https://github.com/Songinpyo/RARE-ICIP2025)
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]](https://ieeexplore.ieee.org/document/11084407) | [[arXiv]](https://arxiv.org/abs/2505.17449) | [[code]](https://github.com/Songinpyo/RARE-ICIP2025)
 
 - #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
   <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[arXiv]](https://arxiv.org/abs/2505.17445)) | [[code]](https://github.com/Songinpyo/PawPrint-ICIP2025)
+  ICIP&#39;25 [Accepted] | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]](https://ieeexplore.ieee.org/document/11084465) | [[arXiv]](https://arxiv.org/abs/2505.17445)) | [[code]](https://github.com/Songinpyo/PawPrint-ICIP2025)
 
 - #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
