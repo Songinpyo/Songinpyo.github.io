@@ -17,13 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello! I'm Inpyo Song, a master's student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
+Hello! I'm Inpyo Song, a Ph.D. student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
 My goal is to develop AI that truly works in the real world. Rather than models that only perform well in controlled laboratory settings, I'm focused on creating vision systems that can operate reliably in complex, unpredictable real-world environments.
 Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving.
 My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
 Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
-You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vitae_July2025.pdf) here. I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
+You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vitae_July2025.pdf) here. 
+I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
 
 <span style="color:#F7374F">**Actively looking for a PhD positions starting from 2026 Fall.**</span>
 
@@ -36,6 +37,7 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 
 
 # 🔥 News
+- *Jun. 2026*: 🎉 "Bounding-Box Trajectories Matter for Video Anomaly Detection" accepted at ECCV 2026.
 - *Aug. 2025*: 🏆 Received the Best Graduate Research Award at the 2025 Digital Innovation Talent Symposium.
 - *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
 - *Feb. 2025*: 🏆 Selected for I-Corps Korea Program
@@ -48,6 +50,9 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 - *Jun. 2024*: 🎉 One paper accepted at IROS 2024.
 
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
+- #### Bounding-Box Trajectories Matter for Video Anomaly Detection
+  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee
+  ECCV'26 | [[arXiv]](https://arxiv.org/abs/2605.21957)
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
@@ -102,7 +107,6 @@ You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vit
 - *Jun. 2024 - Aug. 2024*, Research Intern @ [Indiana University Bloomington CVLab](http://vision.soic.indiana.edu), Bloomington, IN, USA
 
 # 🤝 Services
-- Reviewer, CVPR 2026
 - Reviewer, AAAI 2026
 - Emergency Reviewer, WACV 2025
 - Emergency Reviewer, ICDL 2024
