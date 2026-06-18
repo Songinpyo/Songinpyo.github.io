@@ -26,8 +26,6 @@ Also, I am honored to collaborate with [Prof. David Crandall](https://homes.ludd
 You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vitae_July2025.pdf) here. 
 I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
 
-<span style="color:#F7374F">**Actively looking for a PhD positions starting from 2026 Fall.**</span>
-
 <!-- <h3 id="research-interests">Research Interests</h3>
 - Traffic Accident Anticipation -->
 
@@ -52,7 +50,7 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 - #### Bounding-Box Trajectories Matter for Video Anomaly Detection
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee  
-  ECCV&#39;26 | [[arXiv]](https://arxiv.org/abs/2605.21957)
+  **ECCV&#39;26** | [[arXiv]](https://arxiv.org/abs/2605.21957)
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
@@ -76,7 +74,7 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 
 - #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
   <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
-  IJCAI&#39;24 (14.0 % acceptance rate) | [[paper]](https://www.ijcai.org/proceedings/2024/138)
+  **IJCAI&#39;24** (14.0 % acceptance rate) | [[paper]](https://www.ijcai.org/proceedings/2024/138)
 
 - #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
   <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
@@ -106,7 +104,11 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 # 💻 Internships
 - *Jun. 2024 - Aug. 2024*, Research Intern @ [Indiana University Bloomington CVLab](http://vision.soic.indiana.edu), Bloomington, IN, USA
 
-# 🤝 Services
-- Reviewer, AAAI 2026
-- Emergency Reviewer, WACV 2025
-- Emergency Reviewer, ICDL 2024
+# 🤝 Professional Services
+
+### Conference Reviewer
+- CVPR 2026
+- AAAI 2026
+- IROS 2026
+- WACV 2025
+- ICDL 2024
