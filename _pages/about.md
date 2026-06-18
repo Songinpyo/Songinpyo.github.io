@@ -51,8 +51,8 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 
 # 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
 - #### Bounding-Box Trajectories Matter for Video Anomaly Detection
-  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee
-  ECCV'26 | [[arXiv]](https://arxiv.org/abs/2605.21957)
+  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee  
+  ECCV&#39;26 | [[arXiv]](https://arxiv.org/abs/2605.21957)
 
 - #### Real-Time Traffic Accident Anticipation with Feature Reuse
   <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
