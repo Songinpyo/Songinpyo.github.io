@@ -36,6 +36,7 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 
 # 🔥 News
 - *Jun. 2026*: 🎉 "Bounding-Box Trajectories Matter for Video Anomaly Detection" accepted at ECCV 2026.
+- *Jun. 2026*: 🏆 Received the Outstanding Poster Award at the KIBME Summer Conference 2026.
 - *Aug. 2025*: 🏆 Received the Best Graduate Research Award at the 2025 Digital Innovation Talent Symposium.
 - *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
 - *Feb. 2025*: 🏆 Selected for I-Corps Korea Program
@@ -87,6 +88,7 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 </div> -->
 
 # 🎖 Honors and Awards
+- *Jun. 2026* Outstanding Poster Award, KIBME Summer Conference
 - *Aug. 2025* Best Graduate Research Award, 2025 Digital Innovation Talent Symposium, Ministry of Science and ICT
 - *Feb. 2025* Selected for I-Corps Korea Program, (VLM-based Arduino Tutor)
 - *Oct. 2024* Excellence Award, SKKU Graduate Student Startup Competition (Multimodal VQA-Based Tutoring System for the Digital Transformation of Hands-On Education)
