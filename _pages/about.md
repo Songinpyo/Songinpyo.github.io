@@ -23,7 +23,7 @@ Currently, I'm working on object tracking, anomaly detection, human pose estimat
 My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
 Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
-You can find my [CV](https://songinpyo.github.io/assets/InPyoSong_Curriculum_Vitae_July2025.pdf) here. 
+You can find my [CV](https://songinpyo.github.io/assets/InpyoSong_Curriculum_Vitae_Jun2026.pdf) here. 
 I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
 
 <!-- <h3 id="research-interests">Research Interests</h3>
