@@ -1,0 +1,222 @@
+/* ==========================================================================
+   THEME TOKENS + DARK MODE
+
+   The original Minimal Mistakes partials bake their colours in at compile
+   time via SCSS variables, so dark mode is layered on top as an override
+   pass. Light values below are byte-identical to what the SCSS variables
+   already produce, which keeps light mode pixel-for-pixel unchanged.
+
+   Three states, matching how the toggle behaves:
+     - no data-theme attribute  -> follow the OS (prefers-color-scheme)
+     - data-theme="light"       -> force light, even on a dark OS
+     - data-theme="dark"        -> force dark, even on a light OS
+   ========================================================================== */
+
+:root {
+  --bg:             #fff;
+  --bg-elevated:    #fff;
+  --bg-subtle:      #fafafa;
+  --text:           #494e52;  /* $text-color  = mix(#000, #7a8288, 40%) */
+  --text-strong:    #31363a;
+  --text-muted:     #7a8288;  /* $gray */
+  --border:         #f2f3f3;  /* $border-color = mix(#fff, #7a8288, 90%) */
+  --border-strong:  #dcdee0;
+  --link:           #224b8d;  /* $link-color */
+  --link-hover:     #19386a;
+  --link-visited:   #5978aa;
+  --code-bg:        #fafafa;
+  --accent:         #003092;  /* author-name highlight used across the site */
+  --oral:           #f7374f;
+  --award:          #9a6700;
+  --overlay:        rgba(0, 0, 0, 0.25);
+  --icon-dark:      #171516;  /* GitHub-style near-black brand icons */
+}
+
+@mixin theme-dark {
+  --bg:             #16181c;
+  --bg-elevated:    #1d2025;
+  --bg-subtle:      #22262c;
+  --text:           #c6cad1;
+  --text-strong:    #e8eaed;
+  --text-muted:     #8d949e;
+  --border:         #2b3037;
+  --border-strong:  #3a4048;
+  --link:           #7fb0f0;
+  --link-hover:     #a7c9f7;
+  --link-visited:   #b0a3dd;
+  --code-bg:        #22262c;
+  --accent:         #8fb4ff;
+  --oral:           #ff7085;
+  --award:          #e0b341;
+  --overlay:        rgba(0, 0, 0, 0.6);
+  --icon-dark:      #d7dade;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include theme-dark; }
+}
+:root[data-theme="dark"] { @include theme-dark; }
+
+/* --------------------------------------------------------------------------
+   Re-point the baked-in colours at the tokens above.
+   -------------------------------------------------------------------------- */
+
+/* A class-level `display` beats the `hidden` attribute, which would leak empty
+   placeholders (citation counts, BibTeX blocks) before or without their data. */
+[hidden] { display: none !important; }
+
+html { background-color: var(--bg); }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a         { color: var(--link); }
+a:visited { color: var(--link-visited); }
+a:hover,
+a:active  { color: var(--link-hover); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--text-strong); }
+
+hr { border-top-color: var(--border); }
+
+blockquote { border-left-color: var(--text-muted); }
+
+u, ins            { border-bottom-color: var(--text); }
+abbr[title],
+abbr[data-original-title] { border-bottom-color: var(--text); }
+
+p > code, a > code, li > code, figcaption > code, td > code {
+  background: var(--code-bg);
+  border-color: var(--border-strong);
+  color: var(--text-strong);
+}
+
+pre { color: var(--text); }
+
+::-moz-selection { color: var(--bg); background: var(--text-strong); }
+::selection      { color: var(--bg); background: var(--text-strong); }
+
+/* Masthead / priority-plus nav ------------------------------------------- */
+
+.masthead {
+  background-color: var(--bg);
+  border-bottom-color: var(--border);
+}
+
+.greedy-nav                { background: var(--bg); }
+.greedy-nav a              { color: var(--text-muted); }
+.greedy-nav a:hover        { color: var(--link-hover); }
+.greedy-nav button         { background-color: var(--text-muted); color: var(--bg); }
+.greedy-nav .hidden-links  {
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  box-shadow: 0 0 10px var(--overlay);
+}
+.greedy-nav .hidden-links a:hover {
+  color: var(--link-hover);
+  background: var(--bg-subtle);
+}
+.greedy-nav .hidden-links:before { border-color: var(--border-strong) transparent; }
+.greedy-nav .hidden-links:after  { border-color: var(--bg-elevated) transparent; }
+
+/* Author sidebar ---------------------------------------------------------- */
+
+.author__avatar img  { border-color: var(--border-strong); }
+.author__bio,
+.author__urls li     { color: var(--text); }
+.author__urls {
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  box-shadow: 0 0 10px var(--overlay);
+}
+.author__urls:before { border-color: var(--border-strong) transparent; }
+.author__urls:after  { border-color: var(--bg-elevated) transparent; }
+
+@include breakpoint($large) {
+  .author__urls { background: transparent; box-shadow: none; }
+}
+
+.author__cites {
+  display: block;
+  padding-left: 1.9em;   /* line up under the Google Scholar label, not its icon */
+  color: var(--text-muted);
+  font-size: 0.92em;
+}
+
+/* Brand icons that are near-black by design would vanish on a dark page. */
+.social-icons .fa-github,
+.social-icons .fa-github-square,
+.social-icons .fa-tumblr-square { color: var(--icon-dark); }
+
+/* Tables, notices, page furniture ----------------------------------------- */
+
+table          { color: var(--text); }
+thead          { background-color: var(--bg-subtle); border-bottom-color: var(--border-strong); }
+th, td         { border-bottom-color: var(--border); }
+
+.page__content h1,
+.page__content h2,
+.page__content h3 { border-bottom-color: var(--border); }
+
+.page__meta,
+.page__date    { color: var(--text-muted); }
+
+/* The dark-blue badge from the original template is unreadable on dark. */
+.badge { background-color: var(--link); color: var(--bg); }
+
+.paper-box { border-bottom-color: var(--border); }
+
+/* --------------------------------------------------------------------------
+   Theme toggle button (sits at the right-hand end of the masthead)
+   -------------------------------------------------------------------------- */
+
+/* Floated so it sits at the right-hand end of the masthead row; the nav next
+   to it gets its own block formatting context so it does not wrap underneath. */
+.masthead__menu { overflow: hidden; }
+
+.theme-toggle {
+  float: right;
+  margin-top: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1em;
+  height: 2.1em;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1em;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--link-hover);
+    border-color: var(--border-strong);
+    background: var(--bg-subtle);
+  }
+
+  /* Show the icon for the theme you would switch *to*. */
+  .theme-toggle__sun  { display: none; }
+  .theme-toggle__moon { display: inline; }
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  .theme-toggle__sun  { display: inline; }
+  .theme-toggle__moon { display: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle {
+    .theme-toggle__sun  { display: inline; }
+    .theme-toggle__moon { display: none; }
+  }
+  :root[data-theme="light"] .theme-toggle {
+    .theme-toggle__sun  { display: none; }
+    .theme-toggle__moon { display: inline; }
+  }
+}

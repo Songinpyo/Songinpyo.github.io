@@ -1,0 +1,36 @@
+<script>
+(function () {
+  /* ---------- Theme toggle ---------------------------------------------- */
+  var root = document.documentElement;
+  var btn  = document.getElementById("theme-toggle");
+
+  function activeTheme() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "dark" || explicit === "light") return explicit;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark" : "light";
+  }
+
+  if (btn) {
+    btn.setAttribute("aria-pressed", activeTheme() === "dark" ? "true" : "false");
+    btn.addEventListener("click", function () {
+      var next = activeTheme() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      btn.setAttribute("aria-pressed", next === "dark" ? "true" : "false");
+      try { localStorage.setItem("theme", next); } catch (e) { /* storage blocked */ }
+    });
+  }
+
+  /* ---------- BibTeX show/hide ------------------------------------------ */
+  document.addEventListener("click", function (e) {
+    var toggle = e.target.closest && e.target.closest(".js-bibtex-toggle");
+    if (!toggle) return;
+    var item = toggle.closest(".pub-item");
+    var block = item && item.querySelector(".pub-bibtex");
+    if (!block) return;
+    var open = block.hasAttribute("hidden");
+    if (open) { block.removeAttribute("hidden"); } else { block.setAttribute("hidden", ""); }
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+})();
+</script>

@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 excerpt: ""
+description: "Inpyo Song is a Ph.D. student in computer vision and AI at SungKyunKwan University, working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation."
 author_profile: true
 redirect_from: 
   - /about/
@@ -18,9 +19,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 Hello! I'm Inpyo Song, a Ph.D. student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
-My goal is to develop AI that truly works in the real world. Rather than models that only perform well in controlled laboratory settings, I'm focused on creating vision systems that can operate reliably in complex, unpredictable real-world environments.
-Currently, I'm working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation in autonomous driving.
-My research centers around one core question: how can we build AI vision models that are robust enough to handle the messy, chaotic nature of the real world?
+My research focuses on video anomaly detection and real-world visual understanding. 
+I study how visual systems can reliably recognize and understand unusual events in complex, open-ended environments, with particular interests in object-centric representations, vision-language models, and reliable evaluation.
+My broader goal is to build vision systems that remain useful and trustworthy beyond controlled benchmark settings.
 Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
 You can find my [CV](https://songinpyo.github.io/assets/InpyoSong_Curriculum_Vitae_Jun2026.pdf) here. 
@@ -38,8 +39,8 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 - *Jun. 2026*: 🎉 "Bounding-Box Trajectories Matter for Video Anomaly Detection" accepted at ECCV 2026.
 - *Jun. 2026*: 🏆 Received the Outstanding Poster Award at the KIBME Summer Conference 2026.
 - *Aug. 2025*: 🏆 Received the Best Graduate Research Award at the 2025 Digital Innovation Talent Symposium.
-- *May. 2025*: 🎉 Two papers accepted at ICIP 2025.
-- *Feb. 2025*: 🏆 Selected for I-Corps Korea Program
+- *May 2025*: 🎉 Two papers accepted at ICIP 2025.
+- *Feb. 2025*: 🏆 Selected for I-Corps Korea Program.
 - *Dec. 2024*: 🎉 One paper accepted at WACV 2025.
 - *Oct. 2024*: 🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
 - *Oct. 2024*: 🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
@@ -48,49 +49,23 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 - *Jun. 2024*: Thrilled to join the Indiana University Bloomington CVLab as an intern!
 - *Jun. 2024*: 🎉 One paper accepted at IROS 2024.
 
-# 📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span>
-- #### Bounding-Box Trajectories Matter for Video Anomaly Detection
-  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee  
-  **ECCV&#39;26** | [[arXiv]](https://arxiv.org/abs/2605.21957)
+<h1 id="-publications">📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span></h1>
 
-- #### Real-Time Traffic Accident Anticipation with Feature Reuse
-  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  ICIP&#39;25 | [[Project page]](https://songinpyo.github.io/RARE-Project/) | [[paper]](https://ieeexplore.ieee.org/document/11084407) | [[arXiv]](https://arxiv.org/abs/2505.17449) | [[code]](https://github.com/Songinpyo/RARE-ICIP2025)
+{%- assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+<ol class="pub-list">
+{%- for pub in selected %}
+{%- include publication-item.html pub=pub %}
+{%- endfor %}
+</ol>
 
-- #### PawPrint: Whose Footprints Are These? Identifying Animal Individuals by Their Footprints
-  <span style="color:#003092">**Inpyo Song**</span>, Hyemin Hwang, Jangwon Lee   
-  ICIP&#39;25 | [[Project page]](https://songinpyo.github.io/PawPrint-Project/) | [[paper]](https://ieeexplore.ieee.org/document/11084465) | [[arXiv]](https://arxiv.org/abs/2505.17445)) | [[code]](https://github.com/Songinpyo/PawPrint-ICIP2025)
-
-- #### Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera
-  <span style="color:#003092">**Inpyo Song**</span>, Sanghyeon Lee, Minjun Joo, Jangwon Lee   
-  WACV&#39;25 | [[Project page]](http://songinpyo.github.io/VIEW360-Project/) | [[paper]](https://openaccess.thecvf.com/content/WACV2025/papers/Song_Anomaly_Detection_for_People_with_Visual_Impairments_using_an_Egocentric_WACV_2025_paper.pdf) | [[arXiv]](https://arxiv.org/abs/2411.10945) | [[code]](https://github.com/Songinpyo/VIEW360)
-
-- #### <span style="color:#F7374F">**(Long Oral)** </span> SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects
-  <span style="color:#003092">**Inpyo Song**</span>, Jangwon Lee   
-  IROS&#39;24 | [[Project page]](https://songinpyo.github.io/SFTrack-Project/) | [[paper]](https://ieeexplore.ieee.org/abstract/document/10802537) | [[arXiv]](https://arxiv.org/abs/2410.20079) | [[code]](https://github.com/Songinpyo/SFTrack)
-
-- #### Action-conditioned Contrastive Learning for 3D Human Pose and Shape Estimation in Videos
-  <span style="color:#003092">**Inpyo Song**</span>, Moonwook Ryu, Jangwon Lee   
-  CVIU&#39;24 (IF: 4.3) | [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303) | [[code]](https://github.com/Songinpyo/ACMR)
-
-- #### Motion-aware Heatmap Regression for Human Pose Estimation in Videos
-  <span style="color:#003092">**Inpyo Song**</span>, Jongmin Lee, Moonwook Ryu, Jangwon Lee   
-  **IJCAI&#39;24** (14.0 % acceptance rate) | [[paper]](https://www.ijcai.org/proceedings/2024/138)
-
-- #### Video Question Answering for People with Visual Impairments Using an Egocentric 360-Degree Camera
-  <span style="color:#003092">**Inpyo Song**</span>, Minjun Joo, Joonhyung Kwon, Jangwon Lee   
-  CVPRW&#39;24 | [[arXiv]](https://arxiv.org/abs/2405.19794)
-  
-<!-- <div class='paper-box-text' markdown="1">
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='ywaDtloAAAAJ:u-x6o8ySG0sC'></span></strong>
-</div> -->
+<p class="pub-more">
+  <a href="/publications/" target="_self">See all {{ site.publications | size }} publications &rarr;</a>
+</p>
 
 # 🎖 Honors and Awards
 - *Jun. 2026* Outstanding Poster Award, KIBME Summer Conference
 - *Aug. 2025* Best Graduate Research Award, 2025 Digital Innovation Talent Symposium, Ministry of Science and ICT
-- *Feb. 2025* Selected for I-Corps Korea Program, (VLM-based Arduino Tutor)
+- *Feb. 2025* Selected for I-Corps Korea Program (VLM-based Arduino Tutor)
 - *Oct. 2024* Excellence Award, SKKU Graduate Student Startup Competition (Multimodal VQA-Based Tutoring System for the Digital Transformation of Hands-On Education)
 - *Aug. 2024* President's Award from IITP, 2024 Digital Innovation Talent Symposium (Motion-Aware Heatmap Regression for Human Pose Estimation in Videos)
 - *Feb. 2024* Encouragement Award, SKKU Research Matters (Technological Social Responsibility: Anomaly Detection for People with Visual Impairments Using an Egocentric 360-Degree Camera)
@@ -109,8 +84,10 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 # 🤝 Professional Services
 
 ### Conference Reviewer
+- AAAI 2027
+- NeurIPS 2026
 - CVPR 2026
-- AAAI 2026
 - IROS 2026
+- AAAI 2026
 - WACV 2025
 - ICDL 2024

@@ -40,6 +40,9 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+@import "publications";
+@import "theme";  // tokens + dark mode; must stay last so it wins
+
 .paper-box {
     display: flex;
     justify-content: left;

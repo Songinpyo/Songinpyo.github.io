@@ -1,0 +1,50 @@
+{%- comment -%}
+Renders one entry from the `publications` collection.
+Usage: {% include publication-item.html pub=item %}
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign year = pub.date | date: "%Y" -%}
+{%- assign yy = pub.date | date: "%y" -%}
+{%- if pub.category == "preprint" -%}
+  {%- assign venue_label = pub.venue -%}
+{%- elsif pub.category == "domestic-conf" or pub.category == "domestic-journal" -%}
+  {%- assign venue_label = pub.venue | append: " " | append: year -%}
+{%- else -%}
+  {%- assign venue_label = pub.venue | append: "&#39;" | append: yy -%}
+{%- endif -%}
+
+<li class="pub-item">
+  <h3 class="pub-title">{{ pub.title }}</h3>
+
+  <p class="pub-authors">{{ pub.authors | replace: 'Inpyo Song', '<span class="pub-me">Inpyo Song</span>' }}</p>
+
+  <p class="pub-meta">
+    {%- if pub.featured -%}
+      <strong class="pub-venue">{{ venue_label }}</strong>
+    {%- else -%}
+      <span class="pub-venue">{{ venue_label }}</span>
+    {%- endif -%}
+    {%- if pub.venue_note %} <span class="pub-note">({{ pub.venue_note }})</span>{% endif -%}
+    {%- if pub.highlight %} <span class="pub-badge pub-badge--oral">{{ pub.highlight }}</span>{% endif -%}
+    {%- if pub.award %} <span class="pub-badge pub-badge--award">{{ pub.award }}</span>{% endif -%}
+    {%- if pub.scholar_id %} <span class="pub-badge pub-badge--cite show_paper_citations" data="{{ pub.scholar_id }}" hidden></span>{% endif -%}
+  </p>
+
+  {%- assign has_links = false -%}
+  {%- if pub.links.project or pub.links.paper or pub.links.arxiv or pub.links.code or pub.bibtex -%}
+    {%- assign has_links = true -%}
+  {%- endif -%}
+  {%- if has_links %}
+  <p class="pub-links">
+    {%- if pub.links.project %}<a class="pub-link" href="{{ pub.links.project }}">Project page</a>{% endif -%}
+    {%- if pub.links.paper %}<a class="pub-link" href="{{ pub.links.paper }}">Paper</a>{% endif -%}
+    {%- if pub.links.arxiv %}<a class="pub-link" href="{{ pub.links.arxiv }}">arXiv</a>{% endif -%}
+    {%- if pub.links.code %}<a class="pub-link" href="{{ pub.links.code }}">Code</a>{% endif -%}
+    {%- if pub.bibtex %}<button type="button" class="pub-link pub-link--btn js-bibtex-toggle" aria-expanded="false">BibTeX</button>{% endif -%}
+  </p>
+  {%- endif %}
+
+  {%- if pub.bibtex %}
+  <pre class="pub-bibtex" hidden><code>{{ pub.bibtex | strip }}</code></pre>
+  {%- endif %}
+</li>

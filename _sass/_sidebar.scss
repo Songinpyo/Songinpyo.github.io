@@ -69,13 +69,19 @@
    Author profile and links
    ========================================================================== */
 .profile_box{
-  @include breakpoint($large) {
-    display: block;
-  }
+  /* NOTE: the unconditional `display` must come first. Sass emits a nested
+     at-rule ahead of the declarations written after it, so putting the
+     breakpoint first let `display: flex` override it at every width -- which
+     laid the avatar, name and link list out in a row and pushed them over the
+     content column on desktop. */
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
+
+  @include breakpoint($large) {
+    display: block;
+  }
 }
 
 .author__avatar {

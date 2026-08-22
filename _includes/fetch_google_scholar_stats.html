@@ -1,19 +1,47 @@
+{%- comment -%}
+Pulls citation counts from the `google-scholar-stats` branch, which is
+refreshed daily by .github/workflows/google_scholar_crawler.yaml.
+
+Everything it touches starts hidden, so if the branch is missing or the
+request fails the page simply renders without citation counts.
+{%- endcomment -%}
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
-            });
-        });
+(function () {
+  {% if site.google_scholar_stats_use_cdn -%}
+  var base = "https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/";
+  {%- else -%}
+  var base = "https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/";
+  {%- endif %}
+
+  function show(el) { if (el) el.removeAttribute("hidden"); }
+
+  fetch(base + "gs_data.json", { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (data) {
+      var total = document.getElementById("total_cit");
+      if (total && data.citedby != null) {
+        total.textContent = data.citedby;
+        show(document.getElementById("total_cit_wrap"));
+      }
+
+      var summary = document.getElementById("gs-summary");
+      if (summary && data.citedby != null) {
+        summary.textContent = " (" + data.citedby + " citations"
+          + (data.hindex != null ? ", h-index " + data.hindex : "") + ")";
+        show(summary);
+      }
+
+      var pubs = data.publications || {};
+      Array.prototype.forEach.call(
+        document.getElementsByClassName("show_paper_citations"),
+        function (el) {
+          var rec = pubs[el.getAttribute("data")];
+          if (!rec || !rec.num_citations) return;   // hide 0-citation badges
+          el.textContent = rec.num_citations + (rec.num_citations === 1 ? " citation" : " citations");
+          show(el);
+        }
+      );
     })
+    .catch(function () { /* no stats branch yet: leave the page as-is */ });
+})();
 </script>
