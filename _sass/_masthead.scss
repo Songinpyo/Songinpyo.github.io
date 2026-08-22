@@ -44,10 +44,15 @@
 }
 
 .masthead__menu-home-item {
+  /* NOTE: keep the unconditional declarations ABOVE the breakpoint block.
+     Dart Sass (Jekyll 4) and Ruby Sass (the GitHub Pages builder) order a
+     nested at-rule differently relative to declarations written after it, so
+     the other order makes the two builders disagree. */
+  display: none !important;
+
   @include breakpoint($medium) {
     display: block !important;
   }
-  display: none !important;
 }
 
 .masthead__menu-item {

@@ -86,42 +86,48 @@
 
 .pub-badge--oral  { color: var(--oral); }
 .pub-badge--award { color: var(--award); }
-.pub-badge--cite  { color: var(--text-muted); font-weight: 400; }
 
-/* Links ------------------------------------------------------------------- */
-
-.pub-links {
-  margin: 0;
+/* Citation count: plain muted text at the end of the line, not a pill. The
+   separator is a ::before so it vanishes with the element while unpopulated. */
+.pub-cite {
+  color: var(--text-muted);
   font-size: $type-size-6;
-  line-height: 1.8;
+  white-space: nowrap;
+
+  &:before {
+    content: "|";
+    margin: 0 0.35em 0 0.15em;
+    color: var(--border-strong);
+  }
 }
 
+/* Links -------------------------------------------------------------------
+   Plain inline links on the venue line, separated by pipes -- deliberately
+   understated so a paper with five links does not read as a button bar. */
+
 .pub-link {
-  display: inline-block;
-  margin-right: 0.4em;
-  padding: 0.05em 0.55em;
-  border: 1px solid var(--border-strong);
-  border-radius: 3px;
   color: var(--link);
   text-decoration: none;
   white-space: nowrap;
 
   &:visited { color: var(--link); }
-
   &:hover,
-  &:focus-visible {
-    color: var(--bg);
-    background: var(--link);
-    border-color: var(--link);
-  }
+  &:focus-visible { color: var(--link-hover); text-decoration: underline; }
 }
 
+/* The BibTeX toggle is a <button> for accessibility; make it read as a link. */
 .pub-link--btn {
-  font-family: inherit;
-  font-size: inherit;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
   line-height: inherit;
-  background: transparent;
   cursor: pointer;
+}
+
+.pub-sep {
+  margin: 0 0.15em;
+  color: var(--border-strong);
 }
 
 .pub-bibtex {
