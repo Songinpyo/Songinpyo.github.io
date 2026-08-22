@@ -1,5 +1,4 @@
 ---
-
 title: "Teacher Response Entropy Based Adaptive Knowledge Distillation"
 authors: "Inpyo Song, Jangwon Lee"
 date: 2024-12-01

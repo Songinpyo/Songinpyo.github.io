@@ -1,5 +1,4 @@
 ---
-
 title: "Multi-Task Learning in Facial Kinship Verification"
 authors: "Inpyo Song, Jangwon Lee"
 date: 2023-06-01

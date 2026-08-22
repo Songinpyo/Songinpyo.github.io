@@ -32,11 +32,6 @@ Usage: {% include publication-item.html pub=item %}
     {%- if pub.links.paper %} <span class="pub-sep">|</span> <a class="pub-link" href="{{ pub.links.paper }}">[Paper]</a>{% endif -%}
     {%- if pub.links.arxiv %} <span class="pub-sep">|</span> <a class="pub-link" href="{{ pub.links.arxiv }}">[arXiv]</a>{% endif -%}
     {%- if pub.links.code %} <span class="pub-sep">|</span> <a class="pub-link" href="{{ pub.links.code }}">[Code]</a>{% endif -%}
-    {%- if pub.bibtex %} <span class="pub-sep">|</span> <button type="button" class="pub-link pub-link--btn js-bibtex-toggle" aria-expanded="false">[BibTeX]</button>{% endif -%}
     {%- if pub.scholar_id %} <span class="pub-cite show_paper_citations" data="{{ pub.scholar_id }}" hidden></span>{% endif -%}
   </p>
-
-  {%- if pub.bibtex %}
-  <pre class="pub-bibtex" hidden><code>{{ pub.bibtex | strip }}</code></pre>
-  {%- endif %}
 </li>

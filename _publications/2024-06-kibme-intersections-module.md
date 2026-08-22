@@ -1,5 +1,4 @@
 ---
-
 title: "Smooth and Consistent Pose Estimation with Intersections Module"
 authors: "Jongmin Lee*, Inpyo Song*, Moonwook Ryu, Jangwon Lee"
 date: 2024-06-01

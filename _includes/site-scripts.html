@@ -21,16 +21,5 @@
     });
   }
 
-  /* ---------- BibTeX show/hide ------------------------------------------ */
-  document.addEventListener("click", function (e) {
-    var toggle = e.target.closest && e.target.closest(".js-bibtex-toggle");
-    if (!toggle) return;
-    var item = toggle.closest(".pub-item");
-    var block = item && item.querySelector(".pub-bibtex");
-    if (!block) return;
-    var open = block.hasAttribute("hidden");
-    if (open) { block.removeAttribute("hidden"); } else { block.setAttribute("hidden", ""); }
-    toggle.setAttribute("aria-expanded", open ? "true" : "false");
-  });
 })();
 </script>

@@ -1,5 +1,4 @@
 ---
-
 title: "A Study on Synthetic Data Generation and Evaluation for Pose Estimation in Surveillance Videos"
 authors: "Moonwook Ryu, Jongwoo Choi, Inpyo Song, Jangwon Lee"
 date: 2026-06-01

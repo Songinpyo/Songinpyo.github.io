@@ -62,7 +62,7 @@
    -------------------------------------------------------------------------- */
 
 /* A class-level `display` beats the `hidden` attribute, which would leak empty
-   placeholders (citation counts, BibTeX blocks) before or without their data. */
+   placeholders (such as the citation counts) before or without their data. */
 [hidden] { display: none !important; }
 
 html { background-color: var(--bg); }

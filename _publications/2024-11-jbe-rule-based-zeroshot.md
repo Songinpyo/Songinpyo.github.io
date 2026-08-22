@@ -1,5 +1,4 @@
 ---
-
 title: "Rule-Based Zero-Shot Video Anomaly Detection Using Object Detection and Semantic Segmentation"
 authors: "Inpyo Song, Jangwon Lee"
 date: 2024-11-01

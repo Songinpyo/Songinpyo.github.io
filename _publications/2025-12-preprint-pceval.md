@@ -1,5 +1,4 @@
 ---
-
 title: "PCEval: A Benchmark for Evaluating Physical Computing Capabilities of Large Language Models"
 authors: "Inpyo Song, Eunji Jeon, Jangwon Lee"
 date: 2025-12-31

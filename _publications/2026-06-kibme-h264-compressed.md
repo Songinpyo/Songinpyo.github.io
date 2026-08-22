@@ -1,5 +1,4 @@
 ---
-
 title: "Probing H.264 Compressed-Domain Signals for Video Anomaly Detection"
 authors: "Inpyo Song, Eunji Jeon, Jangwon Lee"
 date: 2026-06-02

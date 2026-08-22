@@ -115,39 +115,9 @@
   &:focus-visible { color: var(--link-hover); text-decoration: underline; }
 }
 
-/* The BibTeX toggle is a <button> for accessibility; make it read as a link. */
-.pub-link--btn {
-  padding: 0;
-  border: 0;
-  background: none;
-  font: inherit;
-  line-height: inherit;
-  cursor: pointer;
-}
-
 .pub-sep {
   margin: 0 0.15em;
   color: var(--border-strong);
-}
-
-.pub-bibtex {
-  margin: 0.6em 0 0.2em;
-  padding: 0.8em 1em;
-  overflow-x: auto;
-  background: var(--code-bg);
-  border: 1px solid var(--border-strong);
-  border-radius: 3px;
-  font-size: $type-size-6;
-  line-height: 1.5;
-  color: var(--text);
-
-  code {
-    background: none;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    white-space: pre;
-  }
 }
 
 /* Page furniture ---------------------------------------------------------- */

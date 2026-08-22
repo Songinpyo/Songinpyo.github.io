@@ -1,5 +1,4 @@
 ---
-
 title: "Rethinking Open-World Video Anomaly Detection: Diagnosing Definition Blindness"
 authors: "Inpyo Song, Jangwon Lee"
 date: 2026-07-22
