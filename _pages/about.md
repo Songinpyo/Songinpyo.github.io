@@ -21,8 +21,9 @@ redirect_from:
 Hello! I'm Inpyo Song, a Ph.D. student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
 I also collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
-My research focuses on video understanding, using object-centric representations and vision-language models to recognize and explain human activities and unusual events.
-I also study reliable evaluation: whether a model's scores reflect its ability to recognize, explain, and locate events.
+My research focuses on video understanding and anomaly detection, with an emphasis on object-centric modeling and reliable evaluation.
+I study how models recognize and explain unusual events through objects, their motion, and interactions.
+I also examine whether their measured performance reflects these capabilities.
 
 You can find my [CV]({{ site.author.cv }}) here.
 I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
