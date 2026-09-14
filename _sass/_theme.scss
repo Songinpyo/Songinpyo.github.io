@@ -30,6 +30,9 @@
   --award:          #9a6700;
   --overlay:        rgba(0, 0, 0, 0.25);
   --icon-dark:      #171516;  /* GitHub-style near-black brand icons */
+  --tag-object-text:     #476780;
+  --tag-language-text:   #705888;
+  --tag-evaluation-text: #426d58;
 }
 
 @mixin theme-dark {
@@ -50,6 +53,9 @@
   --award:          #e0b341;
   --overlay:        rgba(0, 0, 0, 0.6);
   --icon-dark:      #d7dade;
+  --tag-object-text:     #a9c6dc;
+  --tag-language-text:   #c5b3df;
+  --tag-evaluation-text: #a3cdb8;
 }
 
 @media (prefers-color-scheme: dark) {

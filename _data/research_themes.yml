@@ -1,0 +1,11 @@
+- key: object-centric
+  badge: O
+  title: Object-centric representations
+
+- key: vision-language
+  badge: V
+  title: Vision-language models
+
+- key: reliable-evaluation
+  badge: R
+  title: Reliable evaluation

@@ -6,6 +6,7 @@ venue: "IROS"
 venue_full: "IEEE/RSJ International Conference on Intelligent Robots and Systems"
 category: intl-conf
 selected: true
+research_themes: [object-centric]
 highlight: "Long Oral"
 scholar_id: "ywaDtloAAAAJ:UeHWp8X0CEIC"
 links:

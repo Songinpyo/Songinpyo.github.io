@@ -5,7 +5,7 @@ date: 2025-09-01
 venue: "ICIP"
 venue_full: "IEEE International Conference on Image Processing"
 category: intl-conf
-selected: true
+selected: false
 scholar_id: "ywaDtloAAAAJ:YsMSGLbcyi4C"
 links:
   project: "https://songinpyo.github.io/PawPrint-Project/"

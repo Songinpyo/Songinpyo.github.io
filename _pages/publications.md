@@ -13,7 +13,7 @@ author_profile: true
 <p class="pub-intro">
   {{ n_pubs }} entries in total. You can also find them on
   <a href="{{ site.author.googlescholar }}">Google Scholar</a>{% if site.author.googlescholar %}<span id="gs-summary" hidden></span>{% endif %},
-  or download the full <a href="/assets/InpyoSong_Curriculum_Vitae_Jun2026.pdf">CV (PDF)</a>.
+  or download the full <a href="{{ site.author.cv }}">CV (PDF)</a>.
   <a href="/#-publications" target="_self">&larr; Back to selected publications</a>
 </p>
 

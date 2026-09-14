@@ -6,6 +6,7 @@ venue: "ICIP"
 venue_full: "IEEE International Conference on Image Processing"
 category: intl-conf
 selected: true
+research_themes: [object-centric]
 scholar_id: "ywaDtloAAAAJ:W7OEmFMy1HYC"
 links:
   project: "https://songinpyo.github.io/RARE-Project/"

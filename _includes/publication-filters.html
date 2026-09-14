@@ -1,0 +1,35 @@
+<script>
+(function () {
+  var filters = document.querySelector('.pub-filters');
+  var list = document.getElementById('selected-publications');
+  if (!filters || !list) return;
+
+  var inputs = Array.from(filters.querySelectorAll('input[type="checkbox"]'));
+  var papers = Array.from(list.querySelectorAll('.pub-item'));
+  var empty = document.querySelector('.pub-filter-empty');
+  var status = document.getElementById('pub-filter-status');
+
+  function update() {
+    var selected = inputs.filter(function (input) { return input.checked; })
+      .map(function (input) { return input.value; });
+    var visible = 0;
+
+    papers.forEach(function (paper) {
+      var topics = (paper.getAttribute('data-research-themes') || '').split(/\s+/);
+      var matches = selected.some(function (topic) { return topics.indexOf(topic) !== -1; });
+      paper.hidden = !matches;
+      if (matches) visible += 1;
+    });
+
+    empty.hidden = visible !== 0;
+    status.textContent = visible + ' of ' + papers.length + ' publications shown.';
+  }
+
+  inputs.forEach(function (input) {
+    input.checked = true;
+    input.addEventListener('change', update);
+  });
+  filters.hidden = false;
+  update();
+})();
+</script>

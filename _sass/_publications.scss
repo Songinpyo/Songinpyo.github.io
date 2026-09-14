@@ -15,7 +15,7 @@
 .pub-item {
   position: relative;
   margin: 0;
-  padding: 0.9em 0;
+  padding: 0.55em 0;
   border-bottom: 1px solid var(--border);
 
   &:last-child { border-bottom: 0; }
@@ -30,7 +30,7 @@
     content: counter(pub) ".";
     position: absolute;
     left: 0;
-    top: 0.9em;
+    top: 0.55em;
     width: 2em;
     text-align: right;
     color: var(--text-muted);
@@ -38,16 +38,26 @@
   }
 }
 
+.pub-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
 .pub-title {
-  margin: 0 0 0.2em;
-  font-size: $type-size-4;
+  flex: 1;
+  min-width: 0;
+  margin: 0 0 0.15em;
+  font-family: inherit;
+  font-size: 1em;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.25;
   color: var(--text-strong);
 }
 
-.pub-authors {
-  margin: 0 0 0.2em;
+.pub-item .pub-authors {
+  margin: 0 0 0.1em;
+  font-size: 0.9em;
   color: var(--text-muted);
   line-height: 1.4;
 }
@@ -57,12 +67,16 @@
   font-weight: 700;
 }
 
-.pub-meta {
-  margin: 0 0 0.35em;
-  line-height: 1.6;
+.pub-item .pub-meta {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.45;
 }
 
-.pub-venue { color: var(--text); }
+.pub-venue {
+  color: var(--text);
+  font-weight: 600;
+}
 
 .pub-note {
   color: var(--text-muted);
@@ -77,8 +91,8 @@
   padding: 0.05em 0.5em;
   border: 1px solid currentColor;
   border-radius: 1em;
-  font-size: 0.78em;
-  font-weight: 700;
+  font-size: 0.85em;
+  font-weight: 400;
   line-height: 1.5;
   white-space: nowrap;
   vertical-align: 0.08em;
@@ -105,7 +119,7 @@
    Plain inline links on the venue line, separated by pipes -- deliberately
    understated so a paper with five links does not read as a button bar. */
 
-.pub-link {
+.pub-meta .pub-link {
   color: var(--link);
   text-decoration: none;
   white-space: nowrap;
@@ -122,6 +136,124 @@
 
 /* Page furniture ---------------------------------------------------------- */
 
+.pub-section-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65em 1em;
+  margin: 1.4em 0 0.35em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-section-anchor {
+  position: absolute;
+  top: -4rem;
+}
+
+.page__content .pub-section-header h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+
+  &:before { display: none; }
+}
+
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45em 0.9em;
+  min-width: 0;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border: 0;
+  font-size: 0.75rem;
+}
+
+.pub-filters .pub-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.pub-filter input[type="checkbox"] {
+  flex: none;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  accent-color: var(--tag-text);
+}
+
+.pub-filter input:focus-visible {
+  outline: 2px solid var(--tag-text);
+  outline-offset: 3px;
+}
+
+.pub-filter input:not(:checked) ~ span {
+  opacity: 0.5;
+}
+
+.pub-tags {
+  display: inline-flex;
+  flex: none;
+  gap: 0.25em;
+  font-size: 0.75rem;
+}
+
+.pub-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-width: 1.55em;
+  height: 1.55em;
+  padding: 0 0.2em;
+  border: 1px solid rgba(var(--tag-rgb), 0.2);
+  border-radius: 0.35em;
+  background-color: rgba(var(--tag-rgb), 0.09);
+  color: var(--tag-text);
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .pub-filters {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+.page__content .pub-filter-empty {
+  margin: 1em 0;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.pub-tag--object-centric {
+  --tag-rgb: 100, 145, 180;
+  --tag-text: var(--tag-object-text);
+}
+
+.pub-tag--vision-language {
+  --tag-rgb: 145, 120, 180;
+  --tag-text: var(--tag-language-text);
+}
+
+.pub-tag--reliable-evaluation {
+  --tag-rgb: 95, 150, 125;
+  --tag-text: var(--tag-evaluation-text);
+}
+
 .pub-intro {
   margin-bottom: 2em;
   color: var(--text-muted);
@@ -137,5 +269,5 @@
 
 .pub-more {
   margin: 0.5em 0 1em;
-  font-weight: 700;
+  font-weight: 400;
 }

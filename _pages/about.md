@@ -2,7 +2,7 @@
 permalink: /
 title: ""
 excerpt: ""
-description: "Inpyo Song is a Ph.D. student in computer vision and AI at SungKyunKwan University, working on object tracking, anomaly detection, human pose estimation, and traffic accident anticipation."
+description: "Inpyo Song studies how vision systems understand events in video, connecting object-centric representations, vision-language models, and reliable evaluation."
 author_profile: true
 redirect_from: 
   - /about/
@@ -19,12 +19,12 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 Hello! I'm Inpyo Song, a Ph.D. student researching computer vision and artificial intelligence, advised by [Prof. Jangwon Lee](https://leejang.github.io/).
-My research focuses on video anomaly detection and real-world visual understanding. 
-I study how visual systems can reliably recognize and understand unusual events in complex, open-ended environments, with particular interests in object-centric representations, vision-language models, and reliable evaluation.
-My broader goal is to build vision systems that remain useful and trustworthy beyond controlled benchmark settings.
-Also, I am honored to collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
+I also collaborate with [Prof. David Crandall](https://homes.luddy.indiana.edu/djcran/) from Indiana University Bloomington.
 
-You can find my [CV](https://songinpyo.github.io/assets/InpyoSong_Curriculum_Vitae_Jun2026.pdf) here. 
+My research focuses on video understanding, using object-centric representations and vision-language models to recognize and explain human activities and unusual events.
+I also study reliable evaluation: whether a model's scores reflect its ability to recognize, explain, and locate events.
+
+You can find my [CV]({{ site.author.cv }}) here.
 I am always open to any form of collaboration. If you have any ideas for potential collaboration, or just feel like having a casual chat, please feel free to reach out!
 
 <!-- <h3 id="research-interests">Research Interests</h3>
@@ -43,20 +43,30 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 - *Feb. 2025*: 🏆 Selected for I-Corps Korea Program.
 - *Dec. 2024*: 🎉 One paper accepted at WACV 2025.
 - *Oct. 2024*: 🎉 [SFTrack](https://songinpyo.github.io/SFTrack-Project/) presented as Long Oral Presentation at IROS 2024.
-- *Oct. 2024*: 🏆 Received Excellence Award at SKKU Graduate Student Start-up Competition.
-- *Sep. 2024*: 🎉 One paper accepted at CVIU.
-- *Aug. 2024*: 🏆 Received President's Award from IITP at 2024 Digital Innovation Talent Symposium.
-- *Jun. 2024*: Thrilled to join the Indiana University Bloomington CVLab as an intern!
-- *Jun. 2024*: 🎉 One paper accepted at IROS 2024.
 
-<h1 id="-publications">📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span></h1>
+<div class="pub-section-header">
+  <span id="-publications" class="pub-section-anchor" aria-hidden="true"></span>
+  <h1>📝 Publications <span style="font-size: 0.5em; font-weight: normal;">(Selected)</span></h1>
+  <fieldset class="pub-filters" hidden>
+    <legend class="visually-hidden">Filter publications by research topic</legend>
+    {%- for theme in site.data.research_themes %}
+    <label class="pub-filter pub-tag--{{ theme.key }}">
+      <input type="checkbox" value="{{ theme.key }}" checked aria-controls="selected-publications">
+      <span class="pub-tag" aria-hidden="true">{{ theme.badge }}</span>
+      <span>{{ theme.title }}</span>
+    </label>
+    {%- endfor %}
+  </fieldset>
+</div>
 
 {%- assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
-<ol class="pub-list">
+<ol class="pub-list" id="selected-publications">
 {%- for pub in selected %}
-{%- include publication-item.html pub=pub %}
+{%- include publication-item.html pub=pub show_research_tags=true %}
 {%- endfor %}
 </ol>
+<p class="pub-filter-empty" hidden>Select at least one topic to show publications.</p>
+<p class="visually-hidden" id="pub-filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
 
 <p class="pub-more">
   <a href="/publications/" target="_self">See all {{ site.publications | size }} publications &rarr;</a>

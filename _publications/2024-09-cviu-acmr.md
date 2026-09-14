@@ -7,6 +7,7 @@ venue_full: "Computer Vision and Image Understanding"
 venue_note: "IF 4.3, Q1"
 category: intl-journal
 selected: true
+research_themes: [object-centric]
 scholar_id: "ywaDtloAAAAJ:9yKSN-GCB0IC"
 links:
   paper: "https://www.sciencedirect.com/science/article/abs/pii/S1077314224002303"

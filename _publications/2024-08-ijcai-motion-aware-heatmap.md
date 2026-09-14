@@ -7,6 +7,7 @@ venue_full: "International Joint Conference on Artificial Intelligence"
 venue_note: "14.0% acceptance rate"
 category: intl-conf
 selected: true
+research_themes: [object-centric]
 featured: true
 scholar_id: "ywaDtloAAAAJ:qjMakFHDy7sC"
 links:

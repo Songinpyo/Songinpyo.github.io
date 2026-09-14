@@ -13,10 +13,23 @@ Usage: {% include publication-item.html pub=item %}
   {%- assign venue_label = pub.venue | append: "&#39;" | append: yy -%}
 {%- endif -%}
 
-<li class="pub-item">
-  <h3 class="pub-title">{{ pub.title }}</h3>
+<li class="pub-item" data-research-themes="{{ pub.research_themes | join: ' ' }}">
+  <div class="pub-title-row">
+    <h3 class="pub-title">{{ pub.title }}</h3>
+    {%- if include.show_research_tags and pub.research_themes %}
+    <span class="pub-tags" role="list" aria-label="Research topics">
+      {%- for theme in site.data.research_themes %}
+        {%- if pub.research_themes contains theme.key %}
+      <span class="pub-tag pub-tag--{{ theme.key }}" role="listitem" aria-label="{{ theme.title }}" title="{{ theme.title }}">{{ theme.badge }}</span>
+        {%- endif %}
+      {%- endfor %}
+    </span>
+    {%- endif %}
+  </div>
 
-  <p class="pub-authors">{{ pub.authors | replace: 'Inpyo Song', '<span class="pub-me">Inpyo Song</span>' }}</p>
+  <p class="pub-authors">
+    {{ pub.authors | replace: 'Inpyo Song', '<span class="pub-me">Inpyo Song</span>' }}
+  </p>
 
   <p class="pub-meta">
     {%- if pub.featured -%}
