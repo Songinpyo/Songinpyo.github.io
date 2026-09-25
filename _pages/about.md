@@ -37,6 +37,7 @@ I am always open to any form of collaboration. If you have any ideas for potenti
 
 
 # 🔥 News
+- *Sep. 2026*: 🎉 "PCEval: A Benchmark for Evaluating Physical Computing Capabilities of Large Language Models" accepted at NeurIPS 2026.
 - *Jun. 2026*: 🎉 "Bounding-Box Trajectories Matter for Video Anomaly Detection" accepted at ECCV 2026.
 - *Jun. 2026*: 🏆 Received the Outstanding Poster Award at the KIBME Summer Conference 2026.
 - *Aug. 2025*: 🏆 Received the Best Graduate Research Award at the 2025 Digital Innovation Talent Symposium.
