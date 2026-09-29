@@ -1,5 +1,5 @@
 ---
-title: "Frame-Level Evaluation in Weakly Supervised Video Anomaly Detection Mostly Measures Video-Level Ranking"
+title: "Look Inside Each Video: Rethinking How Video Anomaly Detection Is Evaluated"
 authors: "Inpyo Song, Jangwon Lee"
 date: 2026-08-22
 venue: "Under review"
