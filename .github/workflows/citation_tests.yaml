@@ -1,0 +1,33 @@
+name: Citation Regression Tests
+on:
+  push:
+    paths:
+      - 'google_scholar_crawler/**'
+      - '_includes/fetch_google_scholar_stats.html'
+      - '_includes/author-profile.html'
+      - '.github/workflows/*'
+  pull_request:
+    paths:
+      - 'google_scholar_crawler/**'
+      - '_includes/fetch_google_scholar_stats.html'
+      - '_includes/author-profile.html'
+      - '.github/workflows/*'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: google_scholar_crawler/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r google_scholar_crawler/requirements.txt
+      - run: python -m unittest discover -s google_scholar_crawler -p 'test_*.py'
+      - run: node --test google_scholar_crawler/tests/display.test.cjs

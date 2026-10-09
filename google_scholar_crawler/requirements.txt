@@ -1,3 +1,5 @@
 scholarly==1.7.11
 # scholarly imports bibtexparser.bibdatabase, which was removed in v2.
 bibtexparser==1.4.3
+# Direct, bounded HTTP transport; retain scholarly only for parsing.
+httpx==0.28.1
