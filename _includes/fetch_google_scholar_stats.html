@@ -19,24 +19,17 @@ request fails the page simply renders without citation counts.
     .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(function (data) {
       if (!Number.isInteger(data.citedby) || data.citedby < 0) throw new Error("Invalid citation count");
-      // Older snapshots used a naive UTC datetime; keep their original date.
-      var stamp = typeof data.updated === "string" ? data.updated.replace(" ", "T") : "";
-      if (stamp && !/(Z|[+-]\d{2}:\d{2})$/.test(stamp)) stamp += "Z";
-      var updated = new Date(stamp);
-      var asOf = Number.isNaN(updated.getTime()) ? "date unavailable" : "as of " + updated.toISOString().slice(0, 10) + " UTC";
       var total = document.getElementById("total_cit");
       if (total && data.citedby != null) {
         total.textContent = data.citedby;
         show(document.getElementById("total_cit_wrap"));
-        var dateLabel = document.getElementById("gs-updated");
-        if (dateLabel) dateLabel.textContent = " (" + asOf + ")";
       }
 
       var summary = document.getElementById("gs-summary");
       if (summary && data.citedby != null) {
         summary.textContent = " (" + data.citedby + " citations"
           + (Number.isInteger(data.hindex) && data.hindex >= 0 ? ", h-index " + data.hindex : "")
-          + "; " + asOf + ")";
+          + ")";
         show(summary);
       }
 
@@ -47,7 +40,6 @@ request fails the page simply renders without citation counts.
           var rec = pubs[el.getAttribute("data")];
           if (!rec || !Number.isInteger(rec.num_citations) || rec.num_citations <= 0) return;   // hide 0-citation badges
           el.textContent = rec.num_citations + (rec.num_citations === 1 ? " citation" : " citations");
-          el.title = "Google Scholar citations, " + asOf;
           show(el);
         }
       );

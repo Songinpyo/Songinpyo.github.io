@@ -15,9 +15,8 @@ URLs, IDs, cookies and response bodies are not.
 All profile pages, metrics and publication IDs must validate before output is
 written. Only a fully successful collection receives a new UTC `updated` value.
 A failed fetch fails the workflow and skips publication, leaving both files on
-`google-scholar-stats` unchanged. The website shows the snapshot date alongside
-totals and in publication badge tooltips; a CDN can delay visibility, but its
-cached snapshot retains its original date.
+`google-scholar-stats` unchanged. The `updated` timestamp remains in the JSON
+for collection diagnostics.
 
 Run checks from the repository root:
 

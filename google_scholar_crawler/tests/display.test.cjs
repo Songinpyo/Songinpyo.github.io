@@ -7,7 +7,7 @@ const source = fs.readFileSync('_includes/fetch_google_scholar_stats.html', 'utf
   .replace(/{%[\s\S]*?%}/g, '').replace(/{{[\s\S]*?}}/g, 'example/repo');
 
 async function render(data, ok = true) {
-  const nodes = Object.fromEntries(['total_cit', 'total_cit_wrap', 'gs-updated', 'gs-summary', 'paper']
+  const nodes = Object.fromEntries(['total_cit', 'total_cit_wrap', 'gs-summary', 'paper']
     .map(id => [id, { textContent: '', hidden: true, removeAttribute() { this.hidden = false; }, getAttribute() { return 'test:paper'; } }]));
   vm.runInNewContext(source, {
     fetch: async () => ({ ok, status: 503, json: async () => data }),
@@ -17,23 +17,24 @@ async function render(data, ok = true) {
   return nodes;
 }
 
-test('old snapshot keeps its UTC date on totals, summary and publication tooltip', async () => {
+test('citation totals and badges have no snapshot date or tooltip', async () => {
   const nodes = await render({ citedby: 86, hindex: 6, updated: '2026-09-30 14:23:15.124241', publications: { 'test:paper': { num_citations: 2 } } });
   assert.equal(nodes.total_cit.textContent, 86);
-  assert.equal(nodes['gs-summary'].textContent, ' (86 citations, h-index 6; as of 2026-09-30 UTC)');
-  assert.equal(nodes['gs-updated'].textContent, ' (as of 2026-09-30 UTC)');
-  assert.equal(nodes.paper.title, 'Google Scholar citations, as of 2026-09-30 UTC');
+  assert.equal(nodes['gs-summary'].textContent, ' (86 citations, h-index 6)');
+  assert.equal(nodes.paper.textContent, '2 citations');
+  assert.equal(nodes.paper.title, undefined);
+  assert.doesNotMatch(fs.readFileSync('_includes/author-profile.html', 'utf8'), /gs-updated/);
 });
-test('new timezone-aware timestamp and zero citations display correctly', async () => {
+test('zero citations display correctly', async () => {
   const nodes = await render({ citedby: 0, hindex: 0, updated: '2026-10-09T01:02:03+00:00' });
   assert.equal(nodes.total_cit_wrap.hidden, false);
-  assert.match(nodes['gs-summary'].textContent, /0 citations, h-index 0; as of 2026-10-09 UTC/);
+  assert.equal(nodes['gs-summary'].textContent, ' (0 citations, h-index 0)');
   assert.equal(nodes.paper.hidden, true);
 });
-test('unknown dates are not represented as a fresh collection', async () => {
-  for (const updated of [undefined, '', 'invalid']) {
+test('snapshot timestamps do not affect visible citation text', async () => {
+  for (const updated of [undefined, '', 'invalid', '2026-09-30 14:23:15.124241', '2026-10-09T01:02:03+00:00']) {
     const nodes = await render({ citedby: 86, updated });
-    assert.match(nodes['gs-summary'].textContent, /date unavailable/);
+    assert.equal(nodes['gs-summary'].textContent, ' (86 citations)');
   }
 });
 test('network or malformed data stays hidden', async () => {
