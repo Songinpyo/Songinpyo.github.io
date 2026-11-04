@@ -9,5 +9,8 @@ selected: true
 research_themes: [reliable-evaluation]
 scholar_id: "ywaDtloAAAAJ:eQOLeE2rZwMC"
 links:
+  project: "https://songinpyo.github.io/PCEval-Project-NeurIPS2026/"
   arxiv: "https://arxiv.org/abs/2601.02404"
+  code: "https://github.com/eunjichon/PCEval-Source"
+  dataset: "https://huggingface.co/datasets/eunzee/PCEval"
 ---
