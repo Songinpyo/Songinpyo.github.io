@@ -10,7 +10,7 @@ title                    : "Inpyo Song"
 url                      : "https://songinpyo.github.io"
 description              : "Ph.D. student"
 repository               : "Songinpyo/Songinpyo.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 google_scholar_id        : "ywaDtloAAAAJ"   # used to fetch citation counts (see .github/workflows/google_scholar_crawler.yaml)
 
 # google analytics

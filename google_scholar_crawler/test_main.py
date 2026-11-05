@@ -1,10 +1,12 @@
 import json
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 import tempfile
+import threading
 import unittest
 
 import httpx
-from main import CollectionError, collect, run
+from main import CollectionError, ProfileHTTPClient, collect, run
 
 ID = "test1234ABCD"
 
@@ -25,6 +27,39 @@ def client_for(handler):
 
 def response(body, status=200, content_type="text/html"):
     return httpx.Response(status, text=body, headers={"content-type": content_type})
+
+
+class TransportTests(unittest.TestCase):
+    def test_real_http_transport_preserves_errors_without_redirects_or_retries(self):
+        requests = []
+
+        class Handler(BaseHTTPRequestHandler):
+            def do_GET(self):
+                requests.append(self.path)
+                status = int(self.path.strip("/"))
+                self.send_response(status)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                if status == 302:
+                    self.send_header("Location", "/200")
+                self.end_headers()
+                self.wfile.write("profile 한글".encode())
+
+            def log_message(self, *_):
+                pass
+
+        with HTTPServer(("127.0.0.1", 0), Handler) as server:
+            worker = threading.Thread(target=server.serve_forever, daemon=True)
+            worker.start()
+            try:
+                client = ProfileHTTPClient(timeout=2)
+                for status in (200, 302, 403, 429, 500):
+                    reply = client.get(f"http://127.0.0.1:{server.server_port}/{status}")
+                    self.assertEqual(reply.status_code, status)
+                    self.assertEqual(reply.text, "profile 한글")
+                self.assertEqual(requests, ["/200", "/302", "/403", "/429", "/500"])
+            finally:
+                server.shutdown()
+                worker.join()
 
 
 class CollectorTests(unittest.TestCase):

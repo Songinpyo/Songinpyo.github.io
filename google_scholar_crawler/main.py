@@ -6,7 +6,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 import re
 import tempfile
-from urllib.parse import parse_qs, urlsplit
+from urllib.error import HTTPError, URLError
+from urllib.parse import parse_qs, urlencode, urlsplit
+from urllib.request import HTTPRedirectHandler, build_opener
 
 from bs4 import BeautifulSoup
 import httpx
@@ -18,6 +20,34 @@ SECTIONS = ["basics", "indices", "counts", "publications"]
 
 class CollectionError(RuntimeError):
     pass
+
+
+class NoRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+class ProfileHTTPClient:
+    """Use the ordinary urllib request path, without redirects or retries."""
+
+    def __init__(self, timeout=20):
+        self.timeout = timeout
+        self.opener = build_opener(NoRedirect())
+
+    def get(self, url):
+        try:
+            reply = self.opener.open(url, timeout=self.timeout)
+        except HTTPError as exc:
+            reply = exc
+        except (TimeoutError, URLError) as exc:
+            if isinstance(exc, TimeoutError) or isinstance(exc.reason, TimeoutError):
+                raise httpx.TimeoutException("Scholar request timed out") from exc
+            raise httpx.RequestError("Scholar connection failed") from exc
+        with reply:
+            try:
+                return httpx.Response(reply.status, content=reply.read(), headers=dict(reply.headers))
+            except TimeoutError as exc:
+                raise httpx.TimeoutException("Scholar response timed out") from exc
 
 
 class ProfileFetcher:
@@ -41,8 +71,11 @@ class ProfileFetcher:
         self.requests += 1
         if self.requests > 10:
             raise CollectionError("Publication pagination exceeded 10 pages")
+        query = parse_qs(parts.query)
+        query = {"user": query.pop("user"), **query}
+        url = "https://scholar.google.com/citations?" + urlencode(query, doseq=True)
         try:
-            response = self.client.get("https://scholar.google.com" + path)
+            response = self.client.get(url)
         except httpx.TimeoutException as exc:
             raise CollectionError("Scholar request timed out; no retry attempted") from exc
         except httpx.RequestError as exc:
@@ -146,8 +179,7 @@ def main():
     # httpx's INFO messages include full URLs. Keep only our safe diagnostics.
     logging.getLogger("httpx").setLevel(logging.WARNING)
     try:
-        with httpx.Client(timeout=20, follow_redirects=False) as client:
-            run(os.environ.get("GOOGLE_SCHOLAR_ID"), Path("results"), client)
+        run(os.environ.get("GOOGLE_SCHOLAR_ID"), Path("results"), ProfileHTTPClient())
     except Exception as exc:
         message = str(exc) if isinstance(exc, CollectionError) else type(exc).__name__
         LOG.error("Citation refresh failed; last published snapshot is unchanged: %s", message)

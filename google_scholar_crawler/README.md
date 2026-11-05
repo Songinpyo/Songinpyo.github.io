@@ -5,12 +5,21 @@ profile identified by the existing `GOOGLE_SCHOLAR_ID` secret. A normal push run
 regression tests and the site's Pages build; it does not fetch new citations.
 
 The pinned scholarly 1.7.11 author parser retains the existing JSON schema. Its
-navigator is replaced by a small bounded HTTP client: 20-second network timeouts,
+navigator is replaced by a small bounded urllib HTTP client: 20-second network timeouts,
 at most 10 profile pages, no automatic retries, no redirect following, no proxy
 rotation and no CAPTCHA handling. The workflow also limits collection to two
 minutes and the whole job to five. Changes to the pinned parser must pass the
 fixture tests, including pagination. HTTP status and exception type are logged;
 URLs, IDs, cookies and response bodies are not.
+
+The client uses urllib's ordinary requests and a stable profile URL with `user`
+first. No browser impersonation or alternate addresses are used. Transport tests
+exercise an actual local HTTP server, including refusal to follow redirects and
+retry HTTP errors. Fixture tests do not establish live Scholar availability.
+
+The website reads the published JSON directly from `raw.githubusercontent.com`.
+This avoids jsDelivr's branch cache continuing to serve an older snapshot after a
+successful update.
 
 All profile pages, metrics and publication IDs must validate before output is
 written. Only a fully successful collection receives a new UTC `updated` value.
